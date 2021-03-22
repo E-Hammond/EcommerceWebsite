@@ -130,7 +130,7 @@ hr{
     margin-right: 180px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: relative;
     
 }
@@ -144,7 +144,7 @@ hr{
 
 
 #row1,#row2,#row3 {
-    border: 1px solid green;
+    border: 1px solid rgb(255, 255, 255);
     position: relative;
     margin-top: 10px;
 }
@@ -176,12 +176,12 @@ hr{
 
 #product-container{
     position: relative;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 #product-container img{
     width: 500px;
-    height: 700px;
+    height: 500px;
 }
 
 
@@ -191,8 +191,22 @@ hr{
 
 
 #details-container div:first-child{
-    margin-top: 50px;
-    margin-left: 50px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+#details-container div{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#details-container button{
+    width: 270px;
+    padding: 15px;
+    background-color: hotpink;
+    cursor: pointer;
 }
 
 
