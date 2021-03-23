@@ -9,17 +9,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="query.js"></script>
 </head>
 <body>
     <br>
     <nav>
         <div>
             <ul> 
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Market</a></li>
-                <li><a href="#">Career</a></li>
-                <li><a href="#">Forum</a></li>
+                <li><b><a href="#">Team</a></b></li>
+                <li><b><a href="#">Home</a></b></li>
+                <li><b><a href="#">Market</a></b></li>
+                <li><b><a href="#">Career</a></b></li>
+                <li><b><a href="#">Forum</a></b></li>
                 <li style="float: right; color: red; font-size: 17px;padding-left: 10px;cursor: pointer;" class="fa fa-cart-arrow-down"><a href="#"></a></li>
                 <li style="float: right;padding: 0; "><a href="#">Login</a></li>
                 <li style="float: right; padding: 0;"><a href="#"> </a></li>
@@ -54,7 +56,7 @@
             </div>
         </div>
         <div id="product-container">
-            <img src="images/jacket.jpg" alt="">
+            <img id="product-img" src="images/jacket.jpg" alt="">
         </div>
         <div id="details-container">
             <div><b>Boys' Stillwater Sherpa 1/4-Zip</b> </div>
@@ -68,11 +70,35 @@
                 <span style= "margin-left: 20px;"> 28 Reviews</span>
                 
             </div><br>
-            <div>div1</div><br>
-            <div>div2</div><br>
-            <div>div3</div><br>
+            <div><p style="display: inline-block;color: hotpink;">FREE GROUND SHIPPING</p> on all orders over $125</div><br>
+            <div><b style="color: hotpink;">$48.99</b>  <s style="font-size: smaller;margin-left: 5px;">$98.50</s></div><br>
+            <div><b>Color:</b> Camel</div><br>
+            <div><span><b>Size:</b> <span id="select-size">Select a size</span> </span>
+            <span style="margin-left: 55px;"><a href="">Size chart</a></span> </div><br>
+            <div class="sizes">
+                 <p id="2T">2T</p>
+                 <p id="3T">3T</p>
+                 <p id="4T">4T</p>
+                 <p id="5">5</p>
+                 <p id="6">6</p>
+                 <p id="7">7</p>
+            </div><br>
+            <div class="sizes">
+                <p id="S">S</p>
+                 <p id="M">M</p>
+                 <p id="L">L</p>
+                 <p id="XL">XL</p>
+            </div>
+            <br>
+            <div></div>
             <div>
-                <button type="button" onclick="">ADD TO CART</button>
+                <button class="firstbutton" type="button" onclick="">ADD TO CART</button>
+            </div>
+            <div>
+                <button class="lastbutton" type="button" onclick="">
+                    <p><b>Buy online, freein-store pickup</b></p>
+                    <p style="font-size: smaller;">Get it today at a store near you</p>
+                </button>
             </div>
         </div>
     </div>
