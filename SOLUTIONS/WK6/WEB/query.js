@@ -41,4 +41,21 @@ $(document).ready(function () {
         $("#select-size").text("XL");
         $("#product-img").css({"width":"750px","height":"750px"})
     });
+    $("#firstbutton").click(function(){
+        $("#img").attr("src","images/jacket.jpg")
+        $("#p1").text("Boys' Stillwater Sherpa 1/4-Zip")
+        $("#p2").text("Style: 3K001154 | Color: Camel | Size: Medium")
+    });
+});
+
+
+
+
+$(document).ready(function(){
+    $("#firstbutton").click(function(){
+        $(this).attr("href","http://127.0.0.1:5500/SOLUTIONS/WK6/WEB/index1.html")
+        $("#img").attr("src","images/boyJacket.jpg")
+        $("#p1").text("Boys' Stillwater Sherpa 1/4-Zip")
+        $("#p2").text("Style: 3K001154 | Color: Camel | Size: Medium")
+    });
 });
